@@ -1,5 +1,10 @@
-let i=2
-while (i<=20) {
-  console.log(i);
-  i +=2
-}
+let fruits=["Apple","Banana","Mango"]
+console.log(fruits)
+fruits.push("Orange")
+console.log(fruits)
+fruits.shift()
+console.log(fruits)
+fruits.unshift("Strawberry")
+console.log(fruits)
+fruits.pop()
+console.log(fruits)

@@ -1,17 +1,3 @@
-let name= "Peace";
-let age= 28;
-let isMale= true;
-let school= ["University of Gitwe","Petit Seminaire de Nyundo","Gacuba II A"]
-let x = 10;
-let y = 5;
-let sum = x + y;
-console.log(name,age,isMale,sum);
-let temperature= 21;
-if (temperature > 30) {
-    console.log("It's hot outside!");
-  } else {
-    console.log("It's cold outside!");
-  }
    age = 18;
     let canVote = age >= 18 ? "Yes, you can vote!" : "No, you're too young.";
     console.log(canVote);  // Output: Yes, you can vote!
@@ -82,3 +68,41 @@ while (i<=20) {
   console.log(i);
   i +=2
 }
+
+//returning values
+function addNumbers(a,b){
+  return a+b
+  }
+  let sum= addNumbers(5,6)
+  console.log(sum)
+
+// function with parameters for log
+function identifyPerson(names,age) {
+  console.log(names + age)
+}
+identifyPerson("Peace Ufitamahoro")
+
+// function expression
+let user=function(names){
+  return "Welcome Sir !" + names
+}
+console.log(user)
+
+// function expression
+let user1=function(names){
+  return "Welcome Sir !" +" "+ names
+}
+console.log(user1("Peacemaker"))
+
+// Fruits Array Manipulation
+
+let fruits=["Apple","Banana","Mango"]
+console.log(fruits)
+fruits.push("Orange")
+console.log(fruits)
+fruits.shift()
+console.log(fruits)
+fruits.unshift("Strawberry")
+console.log(fruits)
+fruits.pop()
+console.log(fruits)
