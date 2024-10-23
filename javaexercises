@@ -8,3 +8,10 @@ fruits.unshift("Strawberry")
 console.log(fruits)
 fruits.pop()
 console.log(fruits)
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };

@@ -26,10 +26,20 @@ function checkEvenOdd(number) {
     console.log(number + " is odd");
   }
 }
-checkEvenOdd(5); 
+
 checkEvenOdd(8); 
 
-
+function divisibleByThree(number) {
+  if (number % 3 === 0) {
+    console.log(number + " is multiple of 3");
+  } else if(number % 3 ===2){
+    console.log(number + " the remainder is 2");
+  }
+  else{
+    console.log(number + "remainder is 1")
+  }
+}
+divisibleByThree(73)
 //Switch statement
 function dayOfTheWeek(number){
   switch(number){
@@ -80,13 +90,15 @@ function addNumbers(a,b){
 function identifyPerson(names,age) {
   console.log(names + age)
 }
-identifyPerson("Peace Ufitamahoro")
+let output1=identifyPerson("Peace Ufitamahoro",28)
+console.log(output1)
 
 // function expression
-let user=function(names){
+const user=(names)=>{
   return "Welcome Sir !" + names
 }
-console.log(user)
+let output= user("Peacemaker");
+console.log(output)
 
 // function expression
 let user1=function(names){
