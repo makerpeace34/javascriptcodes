@@ -1,3 +1,5 @@
+   
+   
    age = 18;
     let canVote = age >= 18 ? "Yes, you can vote!" : "No, you're too young.";
     console.log(canVote);  // Output: Yes, you can vote!
@@ -118,3 +120,15 @@ fruits.unshift("Strawberry")
 console.log(fruits)
 fruits.pop()
 console.log(fruits)
+
+// objects manipulation property method 
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person.fullName(), person.id, person)
+
