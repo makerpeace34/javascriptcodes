@@ -1,9 +1,19 @@
-
-const person = {
-  firstName: "John",
-  lastName: "Doe"
-};
-
-alert(
-person.firstName
-);
+class Book{
+  constructor(title, author, year, genre){
+    this.title= title;
+    this.author= author;
+    this.year= year;
+    this.genre= genre;
+  }
+  getSummary(){
+    return `${this.title} ${this.author} ${this.year}`
+  }
+  getBookAge(){
+    const currentYear = new Date().getFullYear();
+    return currentYear- this.year
+  }
+}
+const Book1= new Book("How to solve conflicts by", "Peace", 2001, "amani ways");
+const Book2= new Book("Resilience cost by", "Kajos", 2010, "mental health");
+console.log(Book1.getSummary());
+console.log(Book2.getSummary());

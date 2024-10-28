@@ -132,3 +132,71 @@ const person = {
 };
 console.log(person.fullName(), person.id, person)
 
+
+// creating a to do list
+let tasks = [];
+function addTask(task) {
+  tasks.push(task);
+  console.log(`"${task}" has been added to the list.`);
+}
+function displayTasks() {
+  console.log("Your To-Do List:");
+  tasks.forEach((task, index) => {
+      console.log(`${index + 1}: ${task}`);
+  });
+}
+function removeTask(index) {
+  if (index > 0 && index <= tasks.length) {
+      console.log(`"${tasks[index - 1]}" has been removed from the list.`);
+      tasks.splice(index - 1, 1);
+  } else {
+      console.log("Invalid index.");
+  }
+}
+addTask("Buy groceries");
+addTask("Read a book");
+displayTasks();
+removeTask(1);
+displayTasks();
+
+// classes define it constructor properties log methods
+class User {
+  constructor(name, role){
+    this.name= name;
+    this.role= role;
+  }
+  showRole(){
+    console.log(`${this.name} is ${this.role}`);
+  }
+}
+      const peaceUfitamahoro= new User("Peace UFITAMAHORO", "nurse")
+peaceUfitamahoro.showRole();
+const usabaseChristian= new User("Christian USABASE", "policeman")
+usabaseChristian.showRole();
+
+class house{
+  constructor(location, price, year){
+    this.location= location
+    this.price= price 
+    this.year= year
+  }
+showHouse(){
+  console.log(`${this.location} is ${this.price} and is built in ${this.year}`)
+}
+}
+const kacyiru= new house("Kacyiru", "250k", 2006)
+kacyiru.showHouse();
+
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  showCar()
+  {console.log(`${this.name} ${this.year}`)}
+}
+
+const myCar1 = new Car("Ford", 2014);
+const myCar2 = new Car("Audi", 2019);
+myCar1.showCar();
+myCar2.showCar();
